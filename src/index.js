@@ -7,9 +7,13 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="circlePosition w-[650px] h-[550px] bg-[#95D9F2] rounded-[100%] absolute z-1 top-[40%] left-[30%] translate-x-[-100%] translate-y-[-100%] blur-[100px]"></div>
-    <div className="circlePosition w-[650px] h-[550px] bg-[#88B4F4] rounded-[100%] absolute z-1 top-[40%] left-[30%] translate-x-[-100%] translate-y-[100%] blur-[100px]"></div>
-    <App />
+    <div className="viewportContainer relative w-screen h-screen overflow-hidden">
+      <App />
+      <div className="circlePosition w-[75vw] h-[75vh] bg-[#C9FAF6] rounded-[100%] absolute z-[-1] top-[50%] left-[70%] transform translate-x-[-50%] translate-y-[-10%] blur-[10em]"></div>
+      <div className="circlePosition w-[75vw] h-[75vh] bg-[#95D9F2] rounded-[100%] absolute z-[-1] top-[50%] left-[20%] transform translate-x-[-50%] translate-y-[-100%] blur-[10em]"></div>
+      <div className="circlePosition w-[75vw] h-[75vh] bg-[#959CF1] rounded-[100%] absolute z-[-1] top-[50%] left-[70%] transform translate-x-[-50%] translate-y-[-100%] blur-[10em]"></div>
+      <div className="circlePosition w-[75vw] h-[75vh] bg-[#88B4F4] rounded-[100%] absolute z-[-1] top-[50%] left-[20%] transform translate-x-[-50%] translate-y-[-10%] blur-[10em]"></div>
+    </div>
   </React.StrictMode>
 );
 

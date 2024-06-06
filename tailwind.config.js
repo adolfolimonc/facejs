@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    borderRadius: {
+      full: "9999px",
+    },
   },
   plugins: [],
 };
